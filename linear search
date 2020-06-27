@@ -1,0 +1,34 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a[10];
+    int i,n,key;
+    cout << "enter elements for array" << endl;
+    for(i=0;i<=6;i++)
+    {
+        cin >> a[i];
+    }
+
+    cout << "enter the number to find in array" << endl;
+    cin >> key;
+    int ans=-1;
+    for(i=0;i<=6;i++)
+    {
+        if(a[i]==key)
+        {
+            ans = i;
+            break;
+        }
+    }
+    if(ans==-1)
+    {
+        cout << "not found " << endl;
+    }
+    else {
+        cout << "answer =" << ans << endl;
+    }
+    return 0;
+}
